@@ -5,7 +5,6 @@
     <h1 class="display-4">
         Selamat Datang!
     </h1>
-    <hr class="my-4">
     <p>Ini adalah Data Siswa!</p>
 </div>
 @endsection

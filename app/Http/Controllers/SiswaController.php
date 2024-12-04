@@ -21,8 +21,10 @@ class SiswaController extends Controller
      */
     public function create()
     {
-        return view('siswas.create');
+        $siswa = Siswa::all(); // Mengambil semua data siswa dari tabel siswas
+        return view('siswas.create', compact('siswa'));
     }
+
 
     /**
      * Store a newly created resource in storage.

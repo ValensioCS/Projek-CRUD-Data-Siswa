@@ -41,5 +41,5 @@
         </tbody>
     </table>
 
-    <a href="{{ route('sikap.create') }}" class="btn btn-primary mt-4">Tambah Data</a>
+    <a href="{{ route('sikap.add') }}" class="btn btn-primary mt-4">Tambah Data</a>
 @endsection

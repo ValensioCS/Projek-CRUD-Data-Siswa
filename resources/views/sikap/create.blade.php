@@ -15,12 +15,21 @@
     @endif
 
 
-<div class="mb-3 row">
-        <label for="name" class="col-sm-2 col-form-label">Nama :</label>
+    <div class="mb-3 row">
+    <label for="name" class="col-sm-2 col-form-label">Nama :</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="name" id="name">
+        <select class="form-select" name="siswa_id" id="name" required>
+    <option selected disabled hidden>Pilih Nama Siswa</option>
+    @foreach ($siswa as $item)
+        <option value="{{ $item->id }}" {{ old('siswa_id') == $item->id ? 'selected' : '' }}>
+            {{ $item->name }}
+        </option>
+    @endforeach
+</select>
+
         </div>
     </div>
+
     <div class="mb-3 row">
         <label for="nis" class="col-sm-2 col-form-label">Nilai :</label>
         <div class="col-sm-10">

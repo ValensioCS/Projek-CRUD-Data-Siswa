@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Apoteker App</title>
+        <title>Db Siswa</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body>
@@ -17,20 +17,26 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('siswa.home') }}">Dashboard</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Dashboard</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Data
+                      Data Siswa
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="{{ route('siswa.home') }}">Data Siswa</a></li>
                       <li><a class="dropdown-item" href="{{ route('siswa.create') }}">Tambah Siswa</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('sikap.home') }}">Nilai Sikap</a>
-                  </li> 
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sikap Siswa
+                    </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ route('sikap.home') }}">Data Sikap</a></li>
+                      <li><a class="dropdown-item" href="{{ route('sikap.add') }}">Tambah Sikap</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
